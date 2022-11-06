@@ -1,4 +1,4 @@
-// swift-tools-version:5.2
+// swift-tools-version:5.7
 import PackageDescription
 
 let package = Package(
@@ -11,7 +11,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/vapor/vapor.git", from: "4.0.0"),
-        .package(url: "https://github.com/vapor-community/sendgrid-kit.git", from: "1.0.0"),
+        .package(url: "https://github.com/moonfishapp/sendgrid-kit.git", branch: "master"),
     ],
     targets: [
         .target(name: "SendGrid", dependencies: [
